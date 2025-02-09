@@ -16,7 +16,6 @@ const CartItem = ({ onContinueShopping }) => {
   };
 
   const handleContinueShopping = (e) => {
-    e.prevent.default;
     onContinueShopping();
   };
 
