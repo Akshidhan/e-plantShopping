@@ -20,7 +20,7 @@ export const CartSlice = createSlice({
     updateQuantity: (state, action) => {
         const plant = state.items.find(item => item.name === action.payload.name);
         if(plant){
-            plant.quantity = action.payload.quantity
+            plant.quantity = action.payload.quantity;
         }
     },
   },
