@@ -249,7 +249,6 @@ const handlePlantsClick = (e) => {
 
 const handleContinueShopping = (e) => {
     setShowCart(false);
-    console.log(addedToCart);
 };
 
 const handleAddToCart = (product) => {
@@ -299,7 +298,7 @@ const handleAddToCart = (product) => {
             ))}
         </div>
  ) :  (
-    <CartItem onContinueShopping={handleContinueShopping} />
+    <CartItem onContinueShopping={handleContinueShopping} cartItems={addedToCart} setCartItems={setAddedToCart} />
 )}
     </div>
     );
